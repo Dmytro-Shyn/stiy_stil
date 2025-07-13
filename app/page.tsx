@@ -20,17 +20,19 @@ export default function Home() {
         <div className="w-full max-w-7xl mx-auto px-5">
           <div className="flex flex-col gap-[90px] w-full">
             <div>
-              <h1 className="text-[96px] leading-[95px] mb-[50px] w-[700px] ">
+              <h1 className="text-[96px] leading-[95px] mb-[50px] w-[700px] animate-fade-in">
                 Table with electric control
               </h1>
-              <p>
+              <p className="animate-fade-in">
                 This "healthy" desk is an indispensable item for people who work
                 sitting down. <br /> Allows you to do your work standing up
               </p>
             </div>
             <div className="flex flex-col gap-[30px]">
-              <span className="font-medium text-[23px]">UAH 12 499</span>
-              <Button className="h-[70px] w-[160px] text-[15px] hover:text-[var(--background)]">
+              <span className="font-medium text-[23px] animate-fade-in">
+                UAH 12 499
+              </span>
+              <Button className="h-[70px] w-[160px] text-[15px] hover:text-[var(--background)] animate-fade-in">
                 Buy
               </Button>
             </div>
@@ -40,8 +42,12 @@ export default function Home() {
       <section className="flex items-center py-[270px]">
         <div className="w-full max-w-7xl mx-auto">
           <div className="relative bg-[url('/video_section.png')] w-full h-[300px] sm:h-[500px] lg:h-[786px] bg-cover bg-center after-video-section"></div>
-          <div className=" mt-[60px]">
-            <h3 className="text-[34px] text-center mb-[20px]">
+          <div className=" mt-[60px] ">
+            <h3
+              data-aos="fade-up"
+              data-aos-duration="500"
+              className="text-[34px] text-center mb-[20px]"
+            >
               Table with electric control
             </h3>
             <p className="text-center text">
@@ -53,20 +59,20 @@ export default function Home() {
       <section className="bg-[url('/quick-height-p1.png')] h-[1000px] bg-cover bg-center flex items-center ">
         <div className="w-full max-w-7xl mx-auto">
           <div className=" mt-[60px] mb-[130px]">
-            <h3 className="text-[48px] leading-[56px] text-left mb-[50px] font-medium">
+            <h3 className="text-[48px] leading-[56px] text-left mb-[50px] font-medium ">
               Quick <br /> height <br /> adjustment
             </h3>
-            <p className="text-left text-[17px] leading-[30px] text-[var(--gray-7)]">
+            <p className="text-left text-[17px] leading-[30px] text-[var(--gray-7)] ">
               Press a button and in just a few seconds, enjoy <br /> working at
               a height that is comfortable for you.
             </p>
           </div>
           <div className="flex gap-[59px]">
-            <div className="flex flex-col gap-3">
+            <div className="flex flex-col gap-3 ">
               <p className="text-[12px] text-[var(--gray-7)]">Payload</p>
               <p className="text-[15px] font-medium">1250 N or up to 125 kg</p>
             </div>
-            <div className="flex flex-col gap-3">
+            <div className="flex flex-col gap-3 ">
               <p className="text-[12px] text-[var(--gray-7)]">Noise</p>
               <p className="text-[15px] font-medium">{`<50 dB`}</p>
             </div>

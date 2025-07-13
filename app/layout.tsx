@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import AOSInit from "@/components/aosinit/index";
 import { Manrope } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/header";
@@ -23,6 +24,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${geistManrope.variable}} antialiased`}>
+        <AOSInit />
         <LenisProvider />
         <Header></Header>
         {children}
