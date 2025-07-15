@@ -20,19 +20,31 @@ export default function Home() {
         <div className="w-full max-w-7xl mx-auto px-5">
           <div className="flex flex-col gap-[90px] w-full">
             <div>
-              <h1 className="text-[96px] leading-[95px] mb-[50px] w-[700px] animate-fade-in">
+              <h1
+                className="text-5xl sm:text-[96px] md:text-[80px] sm:leading-[95px] mb-[50px] lg:w-[700px] overflow-hidden"
+                data-aos="fade-up"
+                data-aos-delay="300"
+                data-aos-duration="1000"
+              >
                 Table with electric control
               </h1>
-              <p className="animate-fade-in">
+              <p
+                data-aos="fade-up"
+                data-aos-delay="300"
+                data-aos-duration="1000"
+              >
                 This "healthy" desk is an indispensable item for people who work
                 sitting down. <br /> Allows you to do your work standing up
               </p>
             </div>
-            <div className="flex flex-col gap-[30px]">
-              <span className="font-medium text-[23px] animate-fade-in">
-                UAH 12 499
-              </span>
-              <Button className="h-[70px] w-[160px] text-[15px] hover:text-[var(--background)] animate-fade-in">
+            <div
+              data-aos="fade-up"
+              data-aos-delay="300"
+              data-aos-duration="1000"
+              className="flex flex-col gap-[30px]"
+            >
+              <span className="font-medium text-[23px] ">UAH 12 499</span>
+              <Button className="h-[70px] w-[160px] text-[15px] hover:text-[var(--background)]">
                 Buy
               </Button>
             </div>
@@ -42,12 +54,13 @@ export default function Home() {
       <section className="flex items-center py-[270px]">
         <div className="w-full max-w-7xl mx-auto">
           <div className="relative bg-[url('/video_section.png')] w-full h-[300px] sm:h-[500px] lg:h-[786px] bg-cover bg-center after-video-section"></div>
-          <div className=" mt-[60px] ">
-            <h3
-              data-aos="fade-up"
-              data-aos-duration="500"
-              className="text-[34px] text-center mb-[20px]"
-            >
+          <div
+            data-aos="fade-up"
+            data-aos-delay="300"
+            data-aos-duration="1000"
+            className=" mt-[60px] "
+          >
+            <h3 className="text-[34px] text-center mb-[20px]">
               Table with electric control
             </h3>
             <p className="text-center text">
@@ -57,17 +70,32 @@ export default function Home() {
         </div>
       </section>
       <section className="bg-[url('/quick-height-p1.png')] h-[1000px] bg-cover bg-center flex items-center ">
-        <div className="w-full max-w-7xl mx-auto">
+        <div className="w-full max-w-7xl mx-auto px-5">
           <div className=" mt-[60px] mb-[130px]">
-            <h3 className="text-[48px] leading-[56px] text-left mb-[50px] font-medium ">
+            <h3
+              data-aos="fade-up"
+              data-aos-delay="300"
+              data-aos-duration="1000"
+              className="text-[48px] leading-[56px] text-left mb-[50px] font-medium "
+            >
               Quick <br /> height <br /> adjustment
             </h3>
-            <p className="text-left text-[17px] leading-[30px] text-[var(--gray-7)] ">
+            <p
+              data-aos="fade-up"
+              data-aos-delay="400"
+              data-aos-duration="1000"
+              className="text-left text-[17px] leading-[30px] text-[var(--gray-7)] "
+            >
               Press a button and in just a few seconds, enjoy <br /> working at
               a height that is comfortable for you.
             </p>
           </div>
-          <div className="flex gap-[59px]">
+          <div
+            data-aos="fade-up"
+            data-aos-delay="500"
+            data-aos-duration="1000"
+            className="flex gap-[59px]"
+          >
             <div className="flex flex-col gap-3 ">
               <p className="text-[12px] text-[var(--gray-7)]">Payload</p>
               <p className="text-[15px] font-medium">1250 N or up to 125 kg</p>
@@ -81,21 +109,32 @@ export default function Home() {
       </section>
       <section className="bg-[url('/quick-height-p2.png')] h-[1080px] bg-cover bg-center flex items-top">
         <div className="w-full max-w-7xl mx-auto">
-          <h1 className="text-[48px] leading-[56px] text-center mb-[50px] mt-[185px] font-medium">
+          <h1
+            data-aos="fade-up"
+            data-aos-delay="300"
+            data-aos-duration="1000"
+            className="text-[48px] leading-[56px] text-center mb-[50px] mt-[185px] font-medium"
+          >
             Two separate motors for <br /> extra power and stability
           </h1>
         </div>
       </section>
       <section className="max-w-7xl mx-auto ">
-        <div className="grid grid-cols-3 gap-[10px] mt-[270px] mb-[270px]">
+        <div className="grid grid-cols-3 gap-[10px] mt-[270px] mb-[270px] px-5">
           {/* 1 блок */}
           <div className="flex flex-col">
-            <p className="text-[23px] leading-[37px] mb-6 text-left">
+            <p
+              data-aos="fade-up"
+              data-aos-delay="300"
+              data-aos-duration="1000"
+              className="text-[23px] leading-[37px] mb-6 text-left"
+            >
               Electric controller
               <br />
               with 4 memory modes
             </p>
             <Image
+              className="z-10"
               src="/il-img1.png"
               width={460}
               height={640}
@@ -104,12 +143,18 @@ export default function Home() {
           </div>
           {/* 2 блок */}
           <div className="flex flex-col">
-            <p className="text-[23px] leading-[37px] mb-6 text-left">
+            <p
+              data-aos="fade-up"
+              data-aos-delay="300"
+              data-aos-duration="1000"
+              className="text-[23px] leading-[37px] mb-6 text-left"
+            >
               Powder
               <br />
               coating
             </p>
             <Image
+              className="z-10"
               src="/il-img2.png"
               width={460}
               height={640}
@@ -118,12 +163,18 @@ export default function Home() {
           </div>
           {/* 3 блок */}
           <div className="flex flex-col">
-            <p className="text-[23px] leading-[37px] mb-6 text-left">
+            <p
+              data-aos="fade-up"
+              data-aos-delay="300"
+              data-aos-duration="1000"
+              className="text-[23px] leading-[37px] mb-6 text-left"
+            >
               Stopping to
               <br />
               prevent collisions
             </p>
             <Image
+              className="z-10"
               src="/il-img3.png"
               width={460}
               height={640}
@@ -133,18 +184,28 @@ export default function Home() {
         </div>
       </section>
       <section className="flex items-start">
-        <div className="w-full max-w-7xl mx-auto flex flex-col mb-[270px]">
+        <div className="w-full max-w-7xl mx-auto flex flex-col mb-[270px] px-5">
           <h3 className="text-[48px] leading-[56px] text-left mb-[50px] font-medium">
             Materials
           </h3>
           <div className="flex flex-col gap-[150px]">
-            <div className="flex justify-between">
-              <h5 className="text-[23px] leading-[37px] font-medium">
+            <div className="flex flex-col xl:flex-row justify-between">
+              <h5
+                data-aos="fade-up"
+                data-aos-delay="300"
+                data-aos-duration="1000"
+                className="text-[23px] leading-[37px] font-medium mb-5 xl:mb-0"
+              >
                 Jointed oak
               </h5>
-              <div className="flex gap-[40px]">
-                <div className="flex flex-col w-[320px] justify-between">
-                  <p className="leading-[30px]">
+              <div className="flex flex-col lg:flex-row gap-[40px]">
+                <div
+                  data-aos="fade-up"
+                  data-aos-delay="300"
+                  data-aos-duration="1000"
+                  className="flex flex-col w-full sm:w-[320px] justify-between gap-2"
+                >
+                  <p className="leading-[30px] ">
                     Deviations from the basic color and structure are normal and
                     emphasize the natural origin of this material.
                   </p>
@@ -160,11 +221,23 @@ export default function Home() {
                 />
               </div>
             </div>
-            <div className="flex justify-between">
-              <h5 className="text-[23px] leading-[37px] font-medium">HPL</h5>
-              <div className="flex gap-[40px]">
-                <div className="flex flex-col w-[320px] justify-between">
-                  <p className="leading-[30px]">
+            <div className="flex flex-col xl:flex-row justify-between">
+              <h5
+                data-aos="fade-up"
+                data-aos-delay="300"
+                data-aos-duration="1000"
+                className="text-[23px] leading-[37px] font-medium mb-5 xl:mb-0"
+              >
+                HPL
+              </h5>
+              <div className="flex flex-col lg:flex-row gap-[40px]">
+                <div
+                  data-aos="fade-up"
+                  data-aos-delay="300"
+                  data-aos-duration="1000"
+                  className="flex flex-col w-full sm:w-[320px] justify-between gap-2"
+                >
+                  <p className="leading-[30px] ">
                     Moisture resistant plywood with HPL lamination, resistant to
                     damage
                   </p>
@@ -180,13 +253,23 @@ export default function Home() {
                 />
               </div>
             </div>
-            <div className="flex justify-between">
-              <h5 className="text-[23px] leading-[37px] font-medium">
+            <div className="flex flex-col xl:flex-row justify-between">
+              <h5
+                data-aos="fade-up"
+                data-aos-delay="300"
+                data-aos-duration="1000"
+                className="text-[23px] leading-[37px] font-medium mb-5 xl:mb-0"
+              >
                 CHIPBOARD
               </h5>
-              <div className="flex gap-[40px]">
-                <div className="flex flex-col w-[320px] justify-between">
-                  <p className="leading-[30px]">
+              <div className="flex flex-col lg:flex-row gap-[40px]">
+                <div
+                  data-aos="fade-up"
+                  data-aos-delay="300"
+                  data-aos-duration="1000"
+                  className="flex flex-col w-full sm:w-[320px] justify-between gap-2"
+                >
+                  <p className="leading-[30px] ">
                     The board is first covered in several layers with kraft
                     paper impregnated with synthetic resins, followed by a
                     decorative layer with a pattern and a protective coating of
@@ -210,8 +293,18 @@ export default function Home() {
       <section className="flex items-start mb-[270px]">
         <div className="w-full max-w-7xl mx-auto">
           <div className=" flex flex-col mb-[63px]">
-            <div className="flex justify-between items-end">
-              <h3 className="text-[48px] leading-[62px] text-left font-medium w-[750px]">
+            <div
+              data-aos="fade-up"
+              data-aos-delay="300"
+              data-aos-duration="1000"
+              className="flex justify-between items-end"
+            >
+              <h3
+                data-aos="fade-up"
+                data-aos-delay="300"
+                data-aos-duration="1000"
+                className="text-[48px] leading-[62px] text-left font-medium w-[750px]"
+              >
                 Our partners from multinational companies, luxury brands or
                 visionary start-ups
               </h3>
@@ -377,7 +470,12 @@ export default function Home() {
       <section className="flex items-start mb-[270px]">
         <div className="w-full max-w-7xl mx-auto">
           <div className="flex flex-col gap-[80px]">
-            <h3 className="text-[48px] leading-[56px] text-left font-medium">
+            <h3
+              data-aos="fade-up"
+              data-aos-delay="300"
+              data-aos-duration="1000"
+              className="text-[48px] leading-[56px] text-left font-medium"
+            >
               Popular videos about stiy stil
             </h3>
             <EmblaCarousel />
@@ -387,7 +485,12 @@ export default function Home() {
       <section className="bg-[url('/tech-bg-1.png')] py-[180px] sm:py[0]  bg-cover bg-center w-full flex items-center mx-auto px-5">
         <div className="w-full max-w-7xl mx-auto">
           <div className="flex flex-col">
-            <h3 className="text-[48px] leading-[56px] text-left font-medium">
+            <h3
+              data-aos="fade-up"
+              data-aos-delay="300"
+              data-aos-duration="1000"
+              className="text-[48px] leading-[56px] text-left font-medium"
+            >
               Technical specifications
             </h3>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-[130px] mt-[40px] sm:mt-[80px]">
@@ -455,10 +558,20 @@ export default function Home() {
         </div>
       </section>
       <section className="relative bg-[url('/table.png')] h-[100vh] bg-cover  bg-center w-full mx-auto px-5 ">
-        <h2 className="absolute w-full left-1/2 top-1/2 translate-[-50%] text-[48px] leading-[56px] font-medium text-center px-5">
+        <h2
+          data-aos="fade-up"
+          data-aos-delay="300"
+          data-aos-duration="1000"
+          className="absolute w-full left-1/2 top-1/2 translate-[-50%] text-[48px] leading-[56px] font-medium text-center px-5"
+        >
           Table with electric control
         </h2>
-        <div className="absolute w-full left-1/2 top-6/8 translate-[-50%] px-5 flex flex-col justify-center items-center">
+        <div
+          data-aos="fade-up"
+          data-aos-delay="300"
+          data-aos-duration="1000"
+          className="absolute w-full left-1/2 top-6/8 translate-[-50%] px-5 flex flex-col justify-center items-center"
+        >
           <div className="flex justify-between w-[45%] mb-[62px]">
             <div className="flex flex-col gap-[19px]">
               <span className="text-[12px] font-medium text-[var(--gray-7)]">

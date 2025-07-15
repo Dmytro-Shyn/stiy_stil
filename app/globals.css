@@ -130,6 +130,7 @@
     @apply border-border outline-ring/50;
   }
   html {
+    scrollbar-color: hsl(0, 0%, 67%) transparent;
     margin: 0;
     padding: 0;
     width: 100vw;

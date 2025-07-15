@@ -14,7 +14,7 @@ export default function Header() {
             healthy
           </span>
         </div>
-        <nav className="flex items-center gap-[59px]">
+        <nav className="hidden sm:flex items-center gap-[59px]">
           <ul className="flex gap-[30px]">
             <li className="font-medium text-[14px]">
               <a href="">Description</a>
