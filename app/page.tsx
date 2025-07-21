@@ -16,7 +16,7 @@ import EmblaCarousel from "@/components/slider";
 export default function Home() {
   return (
     <>
-      <section className="h-[780px]w-full flex items-center bg-[url('/hero_bg_mob.png')] bg-center bg-no-repeat md:h-[100vh] md:bg-[url('/hero_bg.png')]">
+      <section className="flex h-[780px] w-full items-center bg-[url('/hero_bg_mob.png')] bg-center bg-no-repeat md:h-[100vh] md:bg-[url('/hero_bg.png')]">
         <div className="mx-auto w-full max-w-7xl px-5">
           <div className="flex w-full flex-col gap-7 lg:gap-[90px]">
             <div>
