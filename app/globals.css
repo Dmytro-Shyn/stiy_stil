@@ -7,7 +7,12 @@
   /* --TAILWIND-- */
   --container-7xl: 1400px;
 
-  --breakpoint-md: 600px;
+  --breakpoint-sm: 320px;
+  --breakpoint-md: 480px;
+  --breakpoint-lg: 768px;
+  --breakpoint-xl: 1024px;
+  --breakpoint-2xl: 1200px;
+  --breakpoint-3xl: 1600px;
   /* --\-- */
 
   /* --COLOR-- */
@@ -133,8 +138,6 @@
     scrollbar-color: hsl(0, 0%, 67%) transparent;
     margin: 0;
     padding: 0;
-    width: 100vw;
-    min-height: 100vh;
   }
   body {
     @apply bg-background text-foreground;
@@ -142,51 +145,6 @@
     font-size: 17px;
     color: var(--gray-9);
   }
-}
-
-@layer utilities {
-  .animate-fade-in {
-    animation: fadeIn 1s ease 0.2s both;
-  }
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-      transform: translateY(30px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-}
-
-/* SECTION VIDEO */
-
-.after-video-section::after {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  width: 98px;
-  height: 98px;
-  background: #ffffff;
-  border-radius: 50%;
-  z-index: 10;
-  content: "";
-}
-
-.after-video-section::before {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  background-image: url("/triangel.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 19px;
-  height: 19px;
-  z-index: 11;
-  content: "";
 }
 
 /* slider */

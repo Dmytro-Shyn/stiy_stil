@@ -16,17 +16,12 @@ export default function EmblaCarousel() {
     if (!emblaApi) return;
 
     const onScroll = () => {
-      // Отримати scroll прогрес (від 0 до 1)
       const progress = emblaApi.scrollProgress();
       setScrollProgress(progress);
-      // Можна ще отримати індекс слайда:
-      // const index = emblaApi.selectedScrollSnap();
-      // setSelectedIndex(index);
     };
 
     emblaApi.on("scroll", onScroll);
 
-    // Викликати при монтуванні (щоб не було "стрибка" на початку)
     onScroll();
 
     return () => {
@@ -56,8 +51,9 @@ export default function EmblaCarousel() {
     <div className="embla" ref={emblaRef}>
       <div className="embla__container mb-[54px]">
         <div className="embla__slide overflow-hidden">
-          <div className="flex flex-col gap-[36px] max-w-[680px]">
+          <div className="flex w-[calc(100vw-40px)] flex-col gap-[36px] md:max-w-[680px]">
             <Image
+              className=""
               src="/slider-img-1.png"
               width={680}
               height={380}
@@ -66,26 +62,27 @@ export default function EmblaCarousel() {
             <div className="flex justify-between gap-2.5">
               <div className="flex gap-4">
                 <Image
-                  className="w-[70px] h-[70px]"
+                  className="md:size[70px] size-[40px]"
                   src="/button-play.png"
                   width={70}
                   height={70}
                   alt="Опис зображення"
                 />
                 <div className="flex flex-col justify-between">
-                  <h3 className="text-[23px] leading-[37px] font-medium break-words whitespace-normal">
+                  <h3 className="leading-[27px] font-medium break-words whitespace-normal md:text-[23px] md:leading-[37px]">
                     The perfect workspace for a machead! <br /> Dreamdesk
                   </h3>
                   <span>Keddr.com</span>
                 </div>
               </div>
-              <span>8:53</span>
+              <span className="hidden md:block">8:53</span>
             </div>
           </div>
         </div>
         <div className="embla__slide overflow-hidden">
-          <div className="flex flex-col gap-[36px] max-w-[680px]">
+          <div className="flex w-[calc(100vw-40px)] flex-col gap-[36px] md:max-w-[680px]">
             <Image
+              className=""
               src="/slider-img-2.png"
               width={680}
               height={380}
@@ -94,26 +91,27 @@ export default function EmblaCarousel() {
             <div className="flex justify-between gap-2.5">
               <div className="flex gap-4">
                 <Image
-                  className="w-[70px] h-[70px]"
+                  className="md:size[70px] size-[40px]"
                   src="/button-play.png"
                   width={70}
                   height={70}
                   alt="Опис зображення"
                 />
                 <div className="flex flex-col justify-between">
-                  <h3 className="text-[23px] leading-[37px] font-medium break-words whitespace-normal">
+                  <h3 className="leading-[27px] font-medium break-words whitespace-normal md:text-[23px] md:leading-[37px]">
                     This smart desk is a dream workplace
                   </h3>
-                  <span>GIC channel</span>
+                  <span>Techgik</span>
                 </div>
               </div>
-              <span>8:09</span>
+              <span className="hidden md:block">8:53</span>
             </div>
           </div>
         </div>
         <div className="embla__slide overflow-hidden">
-          <div className="flex flex-col gap-[36px] max-w-[680px]">
+          <div className="flex w-[calc(100vw-40px)] flex-col gap-[36px] md:max-w-[680px]">
             <Image
+              className=""
               src="/slider-img-3.png"
               width={680}
               height={380}
@@ -122,27 +120,27 @@ export default function EmblaCarousel() {
             <div className="flex justify-between gap-2.5">
               <div className="flex gap-4">
                 <Image
-                  className="w-[70px] h-[70px]"
+                  className="md:size[70px] size-[40px]"
                   src="/button-play.png"
                   width={70}
                   height={70}
                   alt="Опис зображення"
                 />
                 <div className="flex flex-col justify-between">
-                  <h3 className="text-[23px] leading-[37px] font-medium break-words whitespace-normal">
-                    Working standing at StiyStil. Why work at such a desk and
-                    its advantages?
+                  <h3 className="leading-[27px] font-medium break-words whitespace-normal md:text-[23px] md:leading-[37px]">
+                    The perfect workspace for a machead! <br /> Dreamdesk
                   </h3>
-                  <span>Tech Union</span>
+                  <span>Keddr.com</span>
                 </div>
               </div>
-              <span>4:58</span>
+              <span className="hidden md:block">8:53</span>
             </div>
           </div>
         </div>
         <div className="embla__slide overflow-hidden">
-          <div className="flex flex-col gap-[36px] max-w-[680px]">
+          <div className="flex w-[calc(100vw-40px)] flex-col gap-[36px] md:max-w-[680px]">
             <Image
+              className=""
               src="/slider-img-1.png"
               width={680}
               height={380}
@@ -151,50 +149,50 @@ export default function EmblaCarousel() {
             <div className="flex justify-between gap-2.5">
               <div className="flex gap-4">
                 <Image
-                  className="w-[70px] h-[70px]"
+                  className="md:size[70px] size-[40px]"
                   src="/button-play.png"
                   width={70}
                   height={70}
                   alt="Опис зображення"
                 />
                 <div className="flex flex-col justify-between">
-                  <h3 className="text-[23px] leading-[37px] font-medium break-words whitespace-normal">
+                  <h3 className="leading-[27px] font-medium break-words whitespace-normal md:text-[23px] md:leading-[37px]">
                     Working standing at StiyStil. Why work at such a desk and
                     its advantages?
                   </h3>
-                  <span>Keddr.com</span>
+                  <span>Tech Union</span>
                 </div>
               </div>
-              <span>8:53</span>
+              <span className="hidden md:block">8:53</span>
             </div>
           </div>
         </div>
       </div>
       <div className="flex justify-between">
-        <div className="flex justify-center mt-4 gap-5">
+        <div className="mt-4 flex justify-center gap-5">
           <button onClick={scrollPrev} disabled={!canPrev}>
             <SliderArrowRight
-              className={`w-[51px] h-[13px] rotate-180 ${
+              className={`h-[13px] w-[51px] rotate-180 ${
                 !canPrev ? "text-[var(--gray-4)]" : "text-[var(--gray-9)]"
               }`}
             />
           </button>
           <button onClick={scrollNext} disabled={!canNext}>
             <SliderArrowRight
-              className={`w-[51px] h-[13px] ${
+              className={`h-[13px] w-[51px] ${
                 !canNext ? "text-[var(--gray-4)]" : "text-[var(--gray-9)]"
               }`}
             />
           </button>
         </div>
-        <div className="flex justify-center items-center gap-4  ]">
+        <div className="hidden items-center justify-center gap-4 xl:flex">
           <span className="text-[14px]">01</span>
-          <div className="flex relative w-[610px]">
+          <div className="relative flex w-[610px]">
             <div
               style={{ width: `${scrollProgress * 100}%` }}
-              className={`absolute left-0 top-0 flex h-0.5 bg-[var(--gray-9)] z-10`}
+              className={`absolute top-0 left-0 z-10 flex h-0.5 bg-[var(--gray-9)]`}
             ></div>
-            <div className="absolute left-0 top-0 flex w-full h-0.5 bg-[var(--gray-4)]"></div>
+            <div className="absolute top-0 left-0 flex h-0.5 w-full bg-[var(--gray-4)]"></div>
           </div>
           <span className="text-[14px]">04</span>
         </div>

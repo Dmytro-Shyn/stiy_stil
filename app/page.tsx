@@ -16,12 +16,12 @@ import EmblaCarousel from "@/components/slider";
 export default function Home() {
   return (
     <>
-      <section className="w-full bg-[url('/hero_bg.png')] h-[1080px] bg-cover bg-center flex items-center">
-        <div className="w-full max-w-7xl mx-auto px-5">
-          <div className="flex flex-col gap-[90px] w-full">
+      <section className="h-[780px]w-full flex items-center bg-[url('/hero_bg_mob.png')] bg-center bg-no-repeat md:h-[100vh] md:bg-[url('/hero_bg.png')]">
+        <div className="mx-auto w-full max-w-7xl px-5">
+          <div className="flex w-full flex-col gap-7 lg:gap-[90px]">
             <div>
               <h1
-                className="text-5xl sm:text-[96px] md:text-[80px] sm:leading-[95px] mb-[50px] lg:w-[700px] overflow-hidden"
+                className="mb-[50px] overflow-hidden text-[32px] leading-[36px] sm:text-[40px] sm:leading-[44px] md:text-[56px] md:leading-[60px] lg:w-[700px] lg:text-[72px] lg:leading-[76px] xl:text-[84px] xl:leading-[88px] 2xl:text-[96px] 2xl:leading-[96px]"
                 data-aos="fade-up"
                 data-aos-delay="300"
                 data-aos-duration="1000"
@@ -29,6 +29,7 @@ export default function Home() {
                 Table with electric control
               </h1>
               <p
+                className="lg:w-[700px]"
                 data-aos="fade-up"
                 data-aos-delay="300"
                 data-aos-duration="1000"
@@ -43,7 +44,7 @@ export default function Home() {
               data-aos-duration="1000"
               className="flex flex-col gap-[30px]"
             >
-              <span className="font-medium text-[23px] ">UAH 12 499</span>
+              <span className="text-[23px] font-medium">UAH 12 499</span>
               <Button className="h-[70px] w-[160px] text-[15px] hover:text-[var(--background)]">
                 Buy
               </Button>
@@ -51,32 +52,41 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="flex items-center py-[270px]">
-        <div className="w-full max-w-7xl mx-auto">
-          <div className="relative bg-[url('/video_section.png')] w-full h-[300px] sm:h-[500px] lg:h-[786px] bg-cover bg-center after-video-section"></div>
+      <section className="flex items-center px-5 py-[270px]">
+        <div className="mx-auto w-full max-w-7xl">
+          <div className="relative aspect-[16/9] w-full bg-[url('/video_section.png')] bg-cover bg-center">
+            {" "}
+            <Image
+              className="absolute top-[50%] left-[50%] size-10 translate-[-50%] md:size-[70px]"
+              src="/button-play.png"
+              width={70}
+              height={70}
+              alt="Опис зображення"
+            />
+          </div>
           <div
             data-aos="fade-up"
             data-aos-delay="300"
             data-aos-duration="1000"
-            className=" mt-[60px] "
+            className="mt-[60px]"
           >
-            <h3 className="text-[34px] text-center mb-[20px]">
+            <h3 className="mb-[20px] text-center text-[34px]">
               Table with electric control
             </h3>
-            <p className="text-center text">
+            <p className="text text-center">
               Researchers at Texas A&M University
             </p>
           </div>
         </div>
       </section>
-      <section className="bg-[url('/quick-height-p1.png')] h-[1000px] bg-cover bg-center flex items-center ">
-        <div className="w-full max-w-7xl mx-auto px-5">
-          <div className=" mt-[60px] mb-[130px]">
+      <section className="flex items-center bg-[url('/quick-height-p1.png')] bg-cover bg-center lg:h-[1000px]">
+        <div className="mx-auto w-full max-w-7xl px-5">
+          <div className="mt-[60px] mb-[130px]">
             <h3
               data-aos="fade-up"
               data-aos-delay="300"
               data-aos-duration="1000"
-              className="text-[48px] leading-[56px] text-left mb-[50px] font-medium "
+              className="mb-[50px] text-left text-[48px] leading-[56px] font-medium"
             >
               Quick <br /> height <br /> adjustment
             </h3>
@@ -84,10 +94,10 @@ export default function Home() {
               data-aos="fade-up"
               data-aos-delay="400"
               data-aos-duration="1000"
-              className="text-left text-[17px] leading-[30px] text-[var(--gray-7)] "
+              className="text-left text-[17px] leading-[30px] text-[var(--gray-7)] md:w-[320px]"
             >
-              Press a button and in just a few seconds, enjoy <br /> working at
-              a height that is comfortable for you.
+              Press a button and in just a few seconds, enjoy working at a
+              height that is comfortable for you.
             </p>
           </div>
           <div
@@ -96,38 +106,38 @@ export default function Home() {
             data-aos-duration="1000"
             className="flex gap-[59px]"
           >
-            <div className="flex flex-col gap-3 ">
+            <div className="flex flex-col gap-3">
               <p className="text-[12px] text-[var(--gray-7)]">Payload</p>
               <p className="text-[15px] font-medium">1250 N or up to 125 kg</p>
             </div>
-            <div className="flex flex-col gap-3 ">
+            <div className="flex flex-col gap-3">
               <p className="text-[12px] text-[var(--gray-7)]">Noise</p>
               <p className="text-[15px] font-medium">{`<50 dB`}</p>
             </div>
           </div>
         </div>
       </section>
-      <section className="bg-[url('/quick-height-p2.png')] h-[1080px] bg-cover bg-center flex items-top">
-        <div className="w-full max-w-7xl mx-auto">
+      <section className="items-top flex h-[1080px] bg-[url('/quick-height-p2.png')] bg-cover bg-center">
+        <div className="mx-auto w-full max-w-7xl">
           <h1
             data-aos="fade-up"
             data-aos-delay="300"
             data-aos-duration="1000"
-            className="text-[48px] leading-[56px] text-center mb-[50px] mt-[185px] font-medium"
+            className="mt-[185px] mb-[50px] text-center text-[48px] leading-[56px] font-medium"
           >
             Two separate motors for <br /> extra power and stability
           </h1>
         </div>
       </section>
-      <section className="max-w-7xl mx-auto ">
-        <div className="grid grid-cols-3 gap-[10px] mt-[270px] mb-[270px] px-5">
+      <section className="mx-auto max-w-7xl">
+        <div className="mt-[270px] mb-[270px] grid grid-cols-1 gap-[25px] px-5 md:gap-[10px] lg:grid-cols-2 xl:grid-cols-3">
           {/* 1 блок */}
           <div className="flex flex-col">
             <p
               data-aos="fade-up"
               data-aos-delay="300"
               data-aos-duration="1000"
-              className="text-[23px] leading-[37px] mb-6 text-left"
+              className="mb-6 text-left text-[23px] leading-[37px]"
             >
               Electric controller
               <br />
@@ -147,7 +157,7 @@ export default function Home() {
               data-aos="fade-up"
               data-aos-delay="300"
               data-aos-duration="1000"
-              className="text-[23px] leading-[37px] mb-6 text-left"
+              className="mb-6 text-left text-[23px] leading-[37px]"
             >
               Powder
               <br />
@@ -167,7 +177,7 @@ export default function Home() {
               data-aos="fade-up"
               data-aos-delay="300"
               data-aos-duration="1000"
-              className="text-[23px] leading-[37px] mb-6 text-left"
+              className="mb-6 text-left text-[23px] leading-[37px]"
             >
               Stopping to
               <br />
@@ -184,28 +194,28 @@ export default function Home() {
         </div>
       </section>
       <section className="flex items-start">
-        <div className="w-full max-w-7xl mx-auto flex flex-col mb-[270px] px-5">
-          <h3 className="text-[48px] leading-[56px] text-left mb-[50px] font-medium">
+        <div className="mx-auto mb-[270px] flex w-full max-w-7xl flex-col px-5">
+          <h3 className="mb-[50px] text-left text-[48px] leading-[56px] font-medium">
             Materials
           </h3>
           <div className="flex flex-col gap-[150px]">
-            <div className="flex flex-col xl:flex-row justify-between">
+            <div className="flex flex-col justify-between xl:flex-row">
               <h5
                 data-aos="fade-up"
                 data-aos-delay="300"
                 data-aos-duration="1000"
-                className="text-[23px] leading-[37px] font-medium mb-5 xl:mb-0"
+                className="mb-5 text-[23px] leading-[37px] font-medium xl:mb-0"
               >
                 Jointed oak
               </h5>
-              <div className="flex flex-col lg:flex-row gap-[40px]">
+              <div className="flex flex-col gap-[40px] lg:flex-row">
                 <div
                   data-aos="fade-up"
                   data-aos-delay="300"
                   data-aos-duration="1000"
-                  className="flex flex-col w-full sm:w-[320px] justify-between gap-2"
+                  className="flex w-full flex-col justify-between gap-2 sm:w-[320px]"
                 >
-                  <p className="leading-[30px] ">
+                  <p className="leading-[30px]">
                     Deviations from the basic color and structure are normal and
                     emphasize the natural origin of this material.
                   </p>
@@ -221,23 +231,23 @@ export default function Home() {
                 />
               </div>
             </div>
-            <div className="flex flex-col xl:flex-row justify-between">
+            <div className="flex flex-col justify-between xl:flex-row">
               <h5
                 data-aos="fade-up"
                 data-aos-delay="300"
                 data-aos-duration="1000"
-                className="text-[23px] leading-[37px] font-medium mb-5 xl:mb-0"
+                className="mb-5 text-[23px] leading-[37px] font-medium xl:mb-0"
               >
                 HPL
               </h5>
-              <div className="flex flex-col lg:flex-row gap-[40px]">
+              <div className="flex flex-col gap-[40px] lg:flex-row">
                 <div
                   data-aos="fade-up"
                   data-aos-delay="300"
                   data-aos-duration="1000"
-                  className="flex flex-col w-full sm:w-[320px] justify-between gap-2"
+                  className="flex w-full flex-col justify-between gap-2 sm:w-[320px]"
                 >
-                  <p className="leading-[30px] ">
+                  <p className="leading-[30px]">
                     Moisture resistant plywood with HPL lamination, resistant to
                     damage
                   </p>
@@ -253,23 +263,23 @@ export default function Home() {
                 />
               </div>
             </div>
-            <div className="flex flex-col xl:flex-row justify-between">
+            <div className="flex flex-col justify-between xl:flex-row">
               <h5
                 data-aos="fade-up"
                 data-aos-delay="300"
                 data-aos-duration="1000"
-                className="text-[23px] leading-[37px] font-medium mb-5 xl:mb-0"
+                className="mb-5 text-[23px] leading-[37px] font-medium xl:mb-0"
               >
                 CHIPBOARD
               </h5>
-              <div className="flex flex-col lg:flex-row gap-[40px]">
+              <div className="flex flex-col gap-[40px] lg:flex-row">
                 <div
                   data-aos="fade-up"
                   data-aos-delay="300"
                   data-aos-duration="1000"
-                  className="flex flex-col w-full sm:w-[320px] justify-between gap-2"
+                  className="flex w-full flex-col justify-between gap-2 sm:w-[320px]"
                 >
-                  <p className="leading-[30px] ">
+                  <p className="leading-[30px]">
                     The board is first covered in several layers with kraft
                     paper impregnated with synthetic resins, followed by a
                     decorative layer with a pattern and a protective coating of
@@ -290,20 +300,20 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="flex items-start mb-[270px]">
-        <div className="w-full max-w-7xl mx-auto">
-          <div className=" flex flex-col mb-[63px]">
+      <section className="mb-[270px] flex items-start px-5">
+        <div className="mx-auto w-full max-w-7xl">
+          <div className="mb-[63px] flex flex-col">
             <div
               data-aos="fade-up"
               data-aos-delay="300"
               data-aos-duration="1000"
-              className="flex justify-between items-end"
+              className="flex flex-col justify-between gap-3 md:flex-row md:items-end md:gap-0"
             >
               <h3
                 data-aos="fade-up"
                 data-aos-delay="300"
                 data-aos-duration="1000"
-                className="text-[48px] leading-[62px] text-left font-medium w-[750px]"
+                className="text-left text-[48px] leading-[62px] font-medium md:w-[750px]"
               >
                 Our partners from multinational companies, luxury brands or
                 visionary start-ups
@@ -319,7 +329,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="grid grid-cols-4 gap-6 items-center place-items-center">
+          <div className="grid grid-cols-4 place-items-center items-center gap-6">
             <div className="">
               {" "}
               <Image
@@ -467,14 +477,14 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="flex items-start mb-[270px]">
-        <div className="w-full max-w-7xl mx-auto">
-          <div className="flex flex-col gap-[80px]">
+      <section className="mb-[270px] flex items-start px-5">
+        <div className="mx-auto w-full max-w-7xl">
+          <div className="flex flex-col gap-[37px] md:gap-[80px]">
             <h3
               data-aos="fade-up"
               data-aos-delay="300"
               data-aos-duration="1000"
-              className="text-[48px] leading-[56px] text-left font-medium"
+              className="text-left text-[48px] leading-[56px] font-medium"
             >
               Popular videos about stiy stil
             </h3>
@@ -482,65 +492,65 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="bg-[url('/tech-bg-1.png')] py-[180px] sm:py[0]  bg-cover bg-center w-full flex items-center mx-auto px-5">
-        <div className="w-full max-w-7xl mx-auto">
+      <section className="sm:py[0] mx-auto flex w-full items-center bg-[url('/tech-bg-1.png')] bg-cover bg-center px-5 py-[180px]">
+        <div className="mx-auto w-full max-w-7xl">
           <div className="flex flex-col">
             <h3
               data-aos="fade-up"
               data-aos-delay="300"
               data-aos-duration="1000"
-              className="text-[48px] leading-[56px] text-left font-medium"
+              className="text-left text-[48px] leading-[56px] font-medium"
             >
               Technical specifications
             </h3>
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-[130px] mt-[40px] sm:mt-[80px]">
+            <div className="mt-[40px] grid grid-cols-1 gap-[130px] sm:mt-[80px] lg:grid-cols-2">
               <Table className="w-full border-separate border-spacing-0">
                 <TableBody>
                   <TableRow>
-                    <TableCell className="font-normal border-b border-[var(--gray-4)] text-[12px]  py-[15px] sm:text-[14px]  sm:py-[25px]">
+                    <TableCell className="border-b border-[var(--gray-4)] py-[15px] text-[12px] font-normal sm:py-[25px] sm:text-[14px]">
                       Model
                     </TableCell>
-                    <TableCell className="text-right font-normal border-b border-[var(--gray-4)] text-[12px]  py-[15px] sm:text-[14px]  sm:py-[25px]">
+                    <TableCell className="border-b border-[var(--gray-4)] py-[15px] text-right text-[12px] font-normal sm:py-[25px] sm:text-[14px]">
                       Height-adjustable table
                     </TableCell>
                   </TableRow>
                   <TableRow>
-                    <TableCell className="font-normal border-b border-[var(--gray-4)] text-[12px]  py-[15px] sm:text-[14px]  sm:py-[25px]">
+                    <TableCell className="border-b border-[var(--gray-4)] py-[15px] text-[12px] font-normal sm:py-[25px] sm:text-[14px]">
                       Dimensions
                     </TableCell>
-                    <TableCell className="text-right font-normal border-b border-[var(--gray-4)] text-[12px]  py-[15px] sm:text-[14px]  sm:py-[25px]">
+                    <TableCell className="border-b border-[var(--gray-4)] py-[15px] text-right text-[12px] font-normal sm:py-[25px] sm:text-[14px]">
                       62-127/108-180 cm
                     </TableCell>
                   </TableRow>
                   <TableRow>
-                    <TableCell className="font-normal border-b border-[var(--gray-4)] text-[12px]  py-[15px] sm:text-[14px]  sm:py-[25px]">
+                    <TableCell className="border-b border-[var(--gray-4)] py-[15px] text-[12px] font-normal sm:py-[25px] sm:text-[14px]">
                       Country of manufacture
                     </TableCell>
-                    <TableCell className="text-right font-normal border-b border-[var(--gray-4)] text-[12px]  py-[15px] sm:text-[14px]  sm:py-[25px]">
+                    <TableCell className="border-b border-[var(--gray-4)] py-[15px] text-right text-[12px] font-normal sm:py-[25px] sm:text-[14px]">
                       China
                     </TableCell>
                   </TableRow>
                   <TableRow>
-                    <TableCell className="font-normal border-b border-[var(--gray-4)] text-[12px]  py-[15px] sm:text-[14px]  sm:py-[25px]">
+                    <TableCell className="border-b border-[var(--gray-4)] py-[15px] text-[12px] font-normal sm:py-[25px] sm:text-[14px]">
                       Material
                     </TableCell>
-                    <TableCell className="text-right font-normal border-b border-[var(--gray-4)] text-[12px]  py-[15px] sm:text-[14px]  sm:py-[25px]">
+                    <TableCell className="border-b border-[var(--gray-4)] py-[15px] text-right text-[12px] font-normal sm:py-[25px] sm:text-[14px]">
                       Powder farbuvannya
                     </TableCell>
                   </TableRow>
                   <TableRow>
-                    <TableCell className="font-normal border-b border-[var(--gray-4)] text-[12px]  py-[15px] sm:text-[14px]  sm:py-[25px]">
+                    <TableCell className="border-b border-[var(--gray-4)] py-[15px] text-[12px] font-normal sm:py-[25px] sm:text-[14px]">
                       Payload
                     </TableCell>
-                    <TableCell className="text-right font-normal border-b border-[var(--gray-4)] text-[12px]  py-[15px] sm:text-[14px]  sm:py-[25px]">
+                    <TableCell className="border-b border-[var(--gray-4)] py-[15px] text-right text-[12px] font-normal sm:py-[25px] sm:text-[14px]">
                       1250 N or up to 125 kg
                     </TableCell>
                   </TableRow>
                   <TableRow>
-                    <TableCell className="font-normal border-b border-[var(--gray-4)] text-[12px]  py-[15px] sm:text-[14px]  sm:py-[25px]">
+                    <TableCell className="border-b border-[var(--gray-4)] py-[15px] text-[12px] font-normal sm:py-[25px] sm:text-[14px]">
                       Noise
                     </TableCell>
-                    <TableCell className="text-right font-normal border-b border-[var(--gray-4)] text-[12px]  py-[15px] sm:text-[14px]  sm:py-[25px]">
+                    <TableCell className="border-b border-[var(--gray-4)] py-[15px] text-right text-[12px] font-normal sm:py-[25px] sm:text-[14px]">
                       &lt; 50 dB
                     </TableCell>
                   </TableRow>
@@ -557,12 +567,12 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="relative bg-[url('/table.png')] h-[100vh] bg-cover  bg-center w-full mx-auto px-5 ">
+      <section className="relative mx-auto h-[100vh] w-full bg-[url('/table.png')] bg-cover bg-center px-5">
         <h2
           data-aos="fade-up"
           data-aos-delay="300"
           data-aos-duration="1000"
-          className="absolute w-full left-1/2 top-1/2 translate-[-50%] text-[48px] leading-[56px] font-medium text-center px-5"
+          className="absolute top-1/2 left-1/2 w-full translate-[-50%] px-5 text-center text-[48px] leading-[56px] font-medium"
         >
           Table with electric control
         </h2>
@@ -570,9 +580,9 @@ export default function Home() {
           data-aos="fade-up"
           data-aos-delay="300"
           data-aos-duration="1000"
-          className="absolute w-full left-1/2 top-6/8 translate-[-50%] px-5 flex flex-col justify-center items-center"
+          className="absolute top-6/8 left-1/2 flex w-full translate-[-50%] flex-col items-center justify-center px-5"
         >
-          <div className="flex justify-between w-[45%] mb-[62px]">
+          <div className="mb-[62px] flex w-[45%] justify-between">
             <div className="flex flex-col gap-[19px]">
               <span className="text-[12px] font-medium text-[var(--gray-7)]">
                 Price
@@ -580,7 +590,7 @@ export default function Home() {
               <span className="text-[23px] font-medium">UAH 12 499</span>
             </div>
             <div className="flex flex-col gap-[19px]">
-              <span className="text-[12px] text-right font-medium text-[var(--gray-7)]">
+              <span className="text-right text-[12px] font-medium text-[var(--gray-7)]">
                 Base color
               </span>
               <span className="text-[23px] font-medium">UAH 12 499</span>
