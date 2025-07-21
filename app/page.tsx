@@ -23,7 +23,7 @@ export default function Home() {
               <h1
                 className="mb-[50px] overflow-hidden text-[32px] leading-[36px] sm:text-[40px] sm:leading-[44px] md:text-[56px] md:leading-[60px] lg:w-[700px] lg:text-[72px] lg:leading-[76px] xl:text-[84px] xl:leading-[88px] 2xl:text-[96px] 2xl:leading-[96px]"
                 data-aos="fade-up"
-                data-aos-delay="300"
+                data-aos-delay="200"
                 data-aos-duration="1000"
               >
                 Table with electric control
@@ -31,7 +31,7 @@ export default function Home() {
               <p
                 className="lg:w-[700px]"
                 data-aos="fade-up"
-                data-aos-delay="300"
+                data-aos-delay="200"
                 data-aos-duration="1000"
               >
                 This "healthy" desk is an indispensable item for people who work
@@ -40,7 +40,7 @@ export default function Home() {
             </div>
             <div
               data-aos="fade-up"
-              data-aos-delay="300"
+              data-aos-delay="200"
               data-aos-duration="1000"
               className="flex flex-col gap-[30px]"
             >
@@ -66,7 +66,7 @@ export default function Home() {
           </div>
           <div
             data-aos="fade-up"
-            data-aos-delay="300"
+            data-aos-delay="200"
             data-aos-duration="1000"
             className="mt-[60px]"
           >
@@ -79,12 +79,12 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="flex items-center bg-[url('/quick-height-p1.png')] bg-cover bg-center lg:h-[1000px]">
+      <section className="flex h-[940px] bg-[url('/quick-height-p1-mob.png')] bg-cover bg-center md:items-center md:bg-[url('/quick-height-p1.png')] lg:h-[1000px]">
         <div className="mx-auto w-full max-w-7xl px-5">
-          <div className="mt-[60px] mb-[130px]">
+          <div className="mt-[60px] mb-[50px] md:mb-[130px]">
             <h3
               data-aos="fade-up"
-              data-aos-delay="300"
+              data-aos-delay="200"
               data-aos-duration="1000"
               className="mb-[50px] text-left text-[48px] leading-[56px] font-medium"
             >
@@ -117,13 +117,13 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="items-top flex h-[1080px] bg-[url('/quick-height-p2.png')] bg-cover bg-center">
-        <div className="mx-auto w-full max-w-7xl">
+      <section className="items-top flex h-[480px] bg-[url('/quick-height-p2-mob.png')] bg-cover bg-center md:h-[1080px] md:bg-[url('/quick-height-p2.png')]">
+        <div className="mx-auto w-full max-w-7xl px-5">
           <h1
             data-aos="fade-up"
-            data-aos-delay="300"
+            data-aos-delay="200"
             data-aos-duration="1000"
-            className="mt-[185px] mb-[50px] text-center text-[48px] leading-[56px] font-medium"
+            className="mt-[100px] mb-[50px] text-center text-[40px] leading-[56px] font-medium md:mt-[185px] md:text-[48px]"
           >
             Two separate motors for <br /> extra power and stability
           </h1>
@@ -135,7 +135,7 @@ export default function Home() {
           <div className="flex flex-col">
             <p
               data-aos="fade-up"
-              data-aos-delay="300"
+              data-aos-delay="200"
               data-aos-duration="1000"
               className="mb-6 text-left text-[23px] leading-[37px]"
             >
@@ -155,7 +155,7 @@ export default function Home() {
           <div className="flex flex-col">
             <p
               data-aos="fade-up"
-              data-aos-delay="300"
+              data-aos-delay="200"
               data-aos-duration="1000"
               className="mb-6 text-left text-[23px] leading-[37px]"
             >
@@ -175,7 +175,7 @@ export default function Home() {
           <div className="flex flex-col">
             <p
               data-aos="fade-up"
-              data-aos-delay="300"
+              data-aos-delay="200"
               data-aos-duration="1000"
               className="mb-6 text-left text-[23px] leading-[37px]"
             >
@@ -202,7 +202,7 @@ export default function Home() {
             <div className="flex flex-col justify-between xl:flex-row">
               <h5
                 data-aos="fade-up"
-                data-aos-delay="300"
+                data-aos-delay="200"
                 data-aos-duration="1000"
                 className="mb-5 text-[23px] leading-[37px] font-medium xl:mb-0"
               >
@@ -211,7 +211,7 @@ export default function Home() {
               <div className="flex flex-col gap-[40px] lg:flex-row">
                 <div
                   data-aos="fade-up"
-                  data-aos-delay="300"
+                  data-aos-delay="200"
                   data-aos-duration="1000"
                   className="flex w-full flex-col justify-between gap-2 sm:w-[320px]"
                 >
@@ -234,7 +234,7 @@ export default function Home() {
             <div className="flex flex-col justify-between xl:flex-row">
               <h5
                 data-aos="fade-up"
-                data-aos-delay="300"
+                data-aos-delay="200"
                 data-aos-duration="1000"
                 className="mb-5 text-[23px] leading-[37px] font-medium xl:mb-0"
               >
@@ -243,7 +243,7 @@ export default function Home() {
               <div className="flex flex-col gap-[40px] lg:flex-row">
                 <div
                   data-aos="fade-up"
-                  data-aos-delay="300"
+                  data-aos-delay="200"
                   data-aos-duration="1000"
                   className="flex w-full flex-col justify-between gap-2 sm:w-[320px]"
                 >
@@ -266,7 +266,7 @@ export default function Home() {
             <div className="flex flex-col justify-between xl:flex-row">
               <h5
                 data-aos="fade-up"
-                data-aos-delay="300"
+                data-aos-delay="200"
                 data-aos-duration="1000"
                 className="mb-5 text-[23px] leading-[37px] font-medium xl:mb-0"
               >
@@ -275,7 +275,7 @@ export default function Home() {
               <div className="flex flex-col gap-[40px] lg:flex-row">
                 <div
                   data-aos="fade-up"
-                  data-aos-delay="300"
+                  data-aos-delay="200"
                   data-aos-duration="1000"
                   className="flex w-full flex-col justify-between gap-2 sm:w-[320px]"
                 >
@@ -305,13 +305,13 @@ export default function Home() {
           <div className="mb-[63px] flex flex-col">
             <div
               data-aos="fade-up"
-              data-aos-delay="300"
+              data-aos-delay="200"
               data-aos-duration="1000"
               className="flex flex-col justify-between gap-3 md:flex-row md:items-end md:gap-0"
             >
               <h3
                 data-aos="fade-up"
-                data-aos-delay="300"
+                data-aos-delay="200"
                 data-aos-duration="1000"
                 className="text-left text-[48px] leading-[62px] font-medium md:w-[750px]"
               >
@@ -482,7 +482,7 @@ export default function Home() {
           <div className="flex flex-col gap-[37px] md:gap-[80px]">
             <h3
               data-aos="fade-up"
-              data-aos-delay="300"
+              data-aos-delay="200"
               data-aos-duration="1000"
               className="text-left text-[48px] leading-[56px] font-medium"
             >
@@ -497,7 +497,7 @@ export default function Home() {
           <div className="flex flex-col">
             <h3
               data-aos="fade-up"
-              data-aos-delay="300"
+              data-aos-delay="200"
               data-aos-duration="1000"
               className="text-left text-[48px] leading-[56px] font-medium"
             >
@@ -567,22 +567,22 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="relative mx-auto h-[100vh] w-full bg-[url('/table.png')] bg-cover bg-center px-5">
+      <section className="relative mx-auto aspect-auto h-[600px] w-full bg-[url('/table-mob.png')] bg-cover bg-center px-5 sm:h-[700px] md:h-[100vh] md:bg-[url('/table.png')]">
         <h2
           data-aos="fade-up"
-          data-aos-delay="300"
+          data-aos-delay="200"
           data-aos-duration="1000"
-          className="absolute top-1/2 left-1/2 w-full translate-[-50%] px-5 text-center text-[48px] leading-[56px] font-medium"
+          className="absolute top-1/6 left-1/2 w-full translate-[-50%] px-5 text-center text-[48px] leading-[56px] font-medium md:top-1/2 md:left-1/2"
         >
           Table with electric control
         </h2>
         <div
           data-aos="fade-up"
-          data-aos-delay="300"
+          data-aos-delay="200"
           data-aos-duration="1000"
           className="absolute top-6/8 left-1/2 flex w-full translate-[-50%] flex-col items-center justify-center px-5"
         >
-          <div className="mb-[62px] flex w-[45%] justify-between">
+          <div className="mb-[62px] flex w-full justify-between md:w-[70%] xl:w-[45%]">
             <div className="flex flex-col gap-[19px]">
               <span className="text-[12px] font-medium text-[var(--gray-7)]">
                 Price
