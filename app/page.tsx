@@ -12,6 +12,7 @@ import {
 } from "@/components/ui/table";
 import { Button } from "@/components/ui/button";
 import EmblaCarousel from "@/components/slider";
+import DotsColor from "@/components/dotsColor";
 
 export default function Home() {
   return (
@@ -52,7 +53,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="flex items-center px-5 py-[270px]">
+      <section className="flex items-center px-5 py-[70px] md:py-[270px]">
         <div className="mx-auto w-full max-w-7xl">
           <div className="relative aspect-[16/9] w-full bg-[url('/video_section.png')] bg-cover bg-center">
             {" "}
@@ -129,8 +130,8 @@ export default function Home() {
           </h1>
         </div>
       </section>
-      <section className="mx-auto max-w-7xl">
-        <div className="mt-[270px] mb-[270px] grid grid-cols-1 gap-[25px] px-5 md:gap-[10px] lg:grid-cols-2 xl:grid-cols-3">
+      <section className="mx-auto max-w-7xl py-[70px] md:py-[270px]">
+        <div className="grid grid-cols-1 gap-[25px] px-5 md:gap-[10px] lg:grid-cols-2 xl:grid-cols-3">
           {/* 1 блок */}
           <div className="flex flex-col">
             <p
@@ -193,8 +194,8 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="flex items-start">
-        <div className="mx-auto mb-[270px] flex w-full max-w-7xl flex-col px-5">
+      <section className="flex items-start py-[70px] md:py-[270px]">
+        <div className="mx-auto flex w-full max-w-7xl flex-col px-5">
           <h3 className="mb-[50px] text-left text-[48px] leading-[56px] font-medium">
             Materials
           </h3>
@@ -300,7 +301,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="mb-[270px] flex items-start px-5">
+      <section className="flex items-start px-5 py-[70px] md:py-[270px]">
         <div className="mx-auto w-full max-w-7xl">
           <div className="mb-[63px] flex flex-col">
             <div
@@ -477,7 +478,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="mb-[270px] flex items-start px-5">
+      <section className="flex items-start px-5 py-[70px] md:py-[270px]">
         <div className="mx-auto w-full max-w-7xl">
           <div className="flex flex-col gap-[37px] md:gap-[80px]">
             <h3
@@ -492,7 +493,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="sm:py[0] mx-auto flex w-full items-center bg-[url('/tech-bg-1.png')] bg-cover bg-center px-5 py-[180px]">
+      <section className="mx-auto flex w-full items-center bg-[url('/tech-bg-1.png')] bg-cover bg-center px-5 py-[70px] md:py-[180px]">
         <div className="mx-auto w-full max-w-7xl">
           <div className="flex flex-col">
             <h3
@@ -523,7 +524,7 @@ export default function Home() {
                     </TableCell>
                   </TableRow>
                   <TableRow>
-                    <TableCell className="border-b border-[var(--gray-4)] py-[15px] text-[12px] font-normal sm:py-[25px] sm:text-[14px]">
+                    <TableCell className="border-b border-[var(--gray-4)] py-[15px] text-[12px] font-normal whitespace-break-spaces sm:py-[25px] sm:text-[14px]">
                       Country of manufacture
                     </TableCell>
                     <TableCell className="border-b border-[var(--gray-4)] py-[15px] text-right text-[12px] font-normal sm:py-[25px] sm:text-[14px]">
@@ -593,7 +594,7 @@ export default function Home() {
               <span className="text-right text-[12px] font-medium text-[var(--gray-7)]">
                 Base color
               </span>
-              <span className="text-[23px] font-medium">UAH 12 499</span>
+              <DotsColor />
             </div>
           </div>
           <Button className="h-[70px] w-[160px] text-[15px] hover:text-[var(--background)]">

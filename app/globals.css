@@ -15,9 +15,6 @@
   --breakpoint-3xl: 1600px;
   /* --\-- */
 
-  /* --COLOR-- */
-  /* --gray-6: var(--gray-6); */
-  /* --\-- */
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);

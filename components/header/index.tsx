@@ -1,8 +1,15 @@
+"use client";
+import { GiHamburgerMenu } from "react-icons/gi";
 import { Button } from "../ui/button";
+import { useState } from "react";
 
 export default function Header() {
+  const [open, setOpen] = useState(false);
+
   return (
-    <header className="fixed top-0 left-0 z-50 w-full bg-white/10 px-5 py-[15px] backdrop-blur-md lg:py-[25px]">
+    <header
+      className={`t fixed top-0 left-0 z-50 w-full bg-white/10 px-5 py-[15px] backdrop-blur-md transition-all duration-300 lg:py-[25px] ${open ? "h-[100vh]" : "h-[70px] py-[15px] lg:py-[25px]"}`}
+    >
       <div className="mx-auto flex max-w-7xl justify-between">
         <div className="flex items-center">
           <span className="mr-[31px] text-[20px] font-medium text-nowrap md:text-2xl">
@@ -14,6 +21,13 @@ export default function Header() {
             healthy
           </span>
         </div>
+        <button
+          onClick={() => setOpen((v) => !v)}
+          className="block cursor-pointer lg:hidden"
+        >
+          <GiHamburgerMenu className="size-6 text-black" />
+        </button>
+
         <nav className="hidden items-center gap-[59px] lg:flex">
           <ul className="flex gap-[30px]">
             <li className="text-[14px] font-medium">
@@ -28,6 +42,21 @@ export default function Header() {
           </Button>
         </nav>
       </div>
+      {open && (
+        <div className="rounded pt-10">
+          <ul className="flex flex-col gap-3">
+            <li className="text-[40px] font-medium">
+              <a href="">Description</a>
+            </li>
+            <li className="text-[40px] font-medium">
+              <a href="">Dimensions</a>
+            </li>
+          </ul>
+          <Button className="mt-5 h-[46px] w-[120px] bg-[#F1F3F5] text-[var(--gray-9)] hover:text-[var(--background)]">
+            Buy
+          </Button>
+        </div>
+      )}
     </header>
   );
 }
