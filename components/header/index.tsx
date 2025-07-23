@@ -1,14 +1,26 @@
 "use client";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { Button } from "../ui/button";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function Header() {
   const [open, setOpen] = useState(false);
 
+  useEffect(() => {
+    if (open) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+    // Чистимо після розмонту (на всяк)
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [open]);
+
   return (
     <header
-      className={`t fixed top-0 left-0 z-50 w-full bg-white/10 px-5 py-[15px] backdrop-blur-md transition-all duration-300 lg:py-[25px] ${open ? "h-[100vh]" : "h-[70px] py-[15px] lg:py-[25px]"}`}
+      className={`fixed top-0 left-0 z-50 w-full bg-white/10 px-5 py-[15px] backdrop-blur-md transition-all duration-300 lg:py-[25px] ${open ? "h-[100vh]" : ""}`}
     >
       <div className="mx-auto flex max-w-7xl justify-between">
         <div className="flex items-center">
